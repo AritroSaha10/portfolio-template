@@ -37,7 +37,7 @@ function Footer() {
             <nav className="items">
                 {links.map(({ name, image, link }) => (
                     <p>
-                        <a href={link}>
+                        <a href={link} title={name + " Profile"}>
                             {image &&
                                 <InlineIcon icon={image} style={{ "fontSize": "20px" }} />
                             }

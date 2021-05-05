@@ -2,6 +2,7 @@ import './App.css';
 
 // Pages
 import Home from "./pages/about";
+import Works from "./pages/works";
 
 // Components
 import Header from "./components/header";
@@ -11,10 +12,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      
-      <Home />
 
-      
+      <div className="mainContent">
+        <Home />
+        <Works />
+      </div>
+
       <Footer />
     </div>
   );

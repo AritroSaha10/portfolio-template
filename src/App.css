@@ -6,6 +6,8 @@
   --bg-accent-color: rgb(212, 215, 219);
 }
 
+/* Scrollbar */
+
 html {
   font-family: "Lato";
   font-size: 14px;
@@ -16,11 +18,26 @@ body {
   background-color: var(--bg-color);
 }
 
-.App {
-  padding-bottom: 60px;
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Header */
+
 header {
   display: flex;
   flex-direction: row;
@@ -60,11 +77,6 @@ nav.items p:hover {
   opacity: 1;
 }
 
-nav.items p a {
-  color: inherit;
-  text-decoration: none;
-}
-
 /* Footer */
 
 footer {
@@ -72,11 +84,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
-  height: 6vh;
   background-color: white;
-
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -95,9 +103,7 @@ footer span.separator {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  height: 40vh;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding: 0vh 4vw 4vh 4vw;
 }
 
 .home .content {
@@ -129,32 +135,64 @@ footer span.separator {
   border-radius: 1vw;
 }
 
-/* Smaller image on smaller screens */
+/* Works page */
+
+.works {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  background-color: var(--bg-accent-color);
+}
+
+.works .title h2 {
+  font-size: x-large;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.works .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.works .cards .card {
+  width: 250px;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: 0.25s;
+}
+
+.works .cards .card:hover {
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+/* Settings for smaller screens */
 
 @media (max-width: 640px) {
   /* About page */
   .home {
     flex-direction: column;
   }
-
   .home .content {
     text-align: center;
   }
-
   .home .content p {
     width: 100%;
   }
-
-  .home .content > ul {
+  .home .content>ul {
     text-align: center;
     padding-left: 0vw;
     list-style-position: inside;
   }
-
   .home .picture {
     align-self: center;
   }
-
   .home .picture img {
     width: 10rem;
     height: 10rem;
