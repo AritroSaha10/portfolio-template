@@ -10,6 +10,10 @@ const links = [
         link: "#"
     },
     {
+        name: "Blog",
+        link: "#"
+    },
+    {
         name: "Contact",
         link: "#"
     }
@@ -18,7 +22,7 @@ const links = [
 function Header() {
     return (
         <header>
-            <div className="logo">Aritro Saha</div>
+            <div className="logo">A.S</div>
             <nav className="items">
                 {links.map(({ name, link }) => (
                     <p>
