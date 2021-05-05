@@ -144,8 +144,6 @@ footer span.separator {
   align-items: center;
   height: auto;
   padding: 1vh 4vw 4vh 4vw;
-  padding-left: 4vw;
-  padding-right: 4vw;
   background-color: var(--bg-accent-color);
 }
 
@@ -160,23 +158,19 @@ footer span.separator {
   gap: 10px;
   justify-content: center;
   align-content: flex-start;
-  
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 1vw 1vh;
-  width: 80vw;
 }
 
 .works .cards .card {
   background-color: var(--bg-color);
-
-  width: 300px;
+  width: auto;
   padding: 15px 30px 30px 30px;
-
   box-shadow: 0 4px 8px var(--shadow-color);
-
   transition: 0.25s;
 }
 
-.works .cards .card > p {
+.works .cards .card>p {
   padding-bottom: 0.5rem;
 }
 
@@ -192,16 +186,12 @@ footer span.separator {
 
 .works .cards .card .projectLink {
   text-decoration: none;
-
   color: white;
   background-color: #1976d2;
   border-radius: 0.5rem;
-
   padding: 0.5rem 1rem;
-
   box-shadow: 0;
   transition: 0.3s;
-
   margin-right: 10px;
 }
 
@@ -239,7 +229,12 @@ footer span.separator {
     height: 10rem;
     border-radius: 1vw;
   }
-  .works .cards .card {
-    width: 250px;
+}
+
+/* Grid squishes weirdly after 740px */
+
+@media (max-width: 740px) {
+  .works .cards {
+    grid-template-columns: 1fr;
   }
 }

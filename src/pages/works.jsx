@@ -44,6 +44,46 @@ const cards = [
         image: "",
         year: "2020"
     },
+    {
+        name: "My Puja",
+        description: "A full stack web app with organized directory of events / pujas and livestreams directed toward Hindu temple-goers, specifically patrons of the Toronto Kalibari temple.        ",
+        projectRedirects: [
+            {
+                siteName: "GitHub",
+                url: "https://github.com/AritroSaha10/MyPuja-Website",
+                icon: <InlineIcon className="icon" icon={githubIcon} />,
+                color: "#1976d2"
+            },
+            {
+                siteName: "Website",
+                url: "https://my-puja-production.web.app",
+                icon: <InlineIcon className="icon" icon={baselineWeb} />,
+                color: "white"
+            },
+        ],
+        image: "",
+        year: "2020"
+    },
+    {
+        name: "My Puja",
+        description: "A full stack web app with organized directory of events / pujas and livestreams directed toward Hindu temple-goers, specifically patrons of the Toronto Kalibari temple.        ",
+        projectRedirects: [
+            {
+                siteName: "GitHub",
+                url: "https://github.com/AritroSaha10/MyPuja-Website",
+                icon: <InlineIcon className="icon" icon={githubIcon} />,
+                color: "#1976d2"
+            },
+            {
+                siteName: "Website",
+                url: "https://my-puja-production.web.app",
+                icon: <InlineIcon className="icon" icon={baselineWeb} />,
+                color: "white"
+            },
+        ],
+        image: "",
+        year: "2020"
+    },
 ]
 
 
