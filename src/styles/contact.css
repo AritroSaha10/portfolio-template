@@ -1,0 +1,19 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+  padding: 1vh 4vw 4vh 4vw;
+  background-color: var(--bg-color);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+}
+
+.contact input[type="text"] {
+
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import profilePicture from "../images/pfp.png";
 
+import "../styles/about.css";
+
 function Home() {
     return (
         <section className="home">

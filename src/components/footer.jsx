@@ -7,6 +7,7 @@ import githubIcon from '@iconify-icons/mdi/github';
 import emailIcon from '@iconify-icons/mdi/email';
 import stackoverflowIcon from '@iconify-icons/cib/stackoverflow';
 
+import "../styles/footer.css";
 
 const links = [
     {

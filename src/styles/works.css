@@ -1,0 +1,75 @@
+.works {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    padding: 1vh 4vw 4vh 4vw;
+    background-color: var(--bg-accent-color);
+}
+
+.works .cards {
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    align-content: flex-start;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1vw 1vh;
+}
+
+.works .cards .card {
+    background-color: var(--bg-color);
+    width: auto;
+    padding: 15px 30px 30px 30px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    transition: 0.25s;
+    display: flex;
+    flex-direction: column;
+}
+
+.works .cards .card>p {
+    padding-bottom: 0.5rem;
+}
+
+@media (max-width: 740px) {
+    .works .cards {
+        grid-template-columns: 1fr;
+    }
+    .works .cards .card .thumbnail {
+        display: none;
+    }
+}
+
+.works .cards .card .thumbnail {
+    max-width: 200px;
+    align-self: center;
+}
+
+.works .cards .card .content .year {
+    font-weight: 100;
+    font-size: small;
+}
+
+.works .cards .card .redirects {
+    display: flex;
+    flex-direction: row;
+}
+
+.works .cards .card .projectLink {
+    text-decoration: none;
+    color: white;
+    background-color: #1976d2;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+.works .cards .card .projectLink:hover {
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.works .cards .card .projectLink .icon {
+    padding-right: 0.25rem;
+}

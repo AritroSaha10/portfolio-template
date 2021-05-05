@@ -5,7 +5,7 @@ import githubIcon from '@iconify-icons/mdi/github';
 import baselineWeb from '@iconify-icons/ic/baseline-web';
 import bxlPlayStore from '@iconify-icons/bx/bxl-play-store';
 
-import weRecycleBanner from "../images/projectThumbnails/WeRecycle_Banner.png";
+import "../styles/works.css";
 
 const cards = [
     {

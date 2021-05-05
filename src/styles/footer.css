@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 3px 5px var(--shadow-color);
+}
+
+footer span.separator {
+    font-weight: 100;
+    font-size: x-large;
+}
