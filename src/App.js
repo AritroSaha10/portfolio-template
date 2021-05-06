@@ -20,13 +20,7 @@ function App() {
 
         <div className="mainContent">
           <Switch>
-            <Route path="/about">
-              <Home />
-            </Route>
-            <Route path="/works">
-              <Works />
-            </Route>
-            <Route path="/" exact>
+            <Route path="/">
               <Home />
               <Works />
               <Contact />

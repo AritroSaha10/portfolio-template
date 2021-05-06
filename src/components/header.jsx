@@ -3,6 +3,7 @@ import React from 'react';
 import "../styles/header.css";
 
 const links = [
+    /* TODO: Integrate this
     {
         name: "About",
         link: "#"
@@ -19,6 +20,7 @@ const links = [
         name: "Contact",
         link: "#"
     }
+    */
 ];
 
 function Header() {
