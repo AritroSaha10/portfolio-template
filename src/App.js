@@ -9,14 +9,11 @@ import Contact from "./pages/contact";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
-// Nav hash link router
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-
 function App() {
   return (
     <div className="App">
       <Header />
-      
+
       <div className="mainContent">
         <Home />
         <Works />
