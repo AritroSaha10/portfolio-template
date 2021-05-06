@@ -23,8 +23,24 @@
     width: 60%;
 }
 
+.home .call-to-action {
+    text-decoration: none;
+    color: white;
+    background-color: #1976d2;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0;
+    transition: 0.3s;
+    font-size: medium;
+}
+
+.home .call-to-action:hover {
+    transform:translateX(10rem);
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
 .home .picture {
-    align-self: flex-end;
+    align-self: center;
 }
 
 .home .picture img {
@@ -53,6 +69,7 @@
     }
     .home .picture {
         align-self: center;
+        padding-top: 4vh;
     }
     .home .picture img {
         width: 10rem;

@@ -1,19 +1,98 @@
+textarea::-webkit-scrollbar {
+  width: 0.75em;
+}
+
+textarea::-webkit-scrollbar-track {
+  box-shadow: 0;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: auto;
   padding: 1vh 4vw 4vh 4vw;
   background-color: var(--bg-color);
 }
 
+.contact .title h2 {
+  text-align: center;
+}
+
 .contact form {
   display: flex;
   flex-direction: column;
-  padding: 5vh;
+  padding: 2.5vh;
+  background-color: var(--bg-accent-color);
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px var(--shadow-color);
 }
 
-.contact input[type="text"] {
+.contact .content form label {
+  font-size: medium;
+  margin: 10px -5px;
+}
 
+.contact .content form input:not([type="submit"]) {
+  padding: 8px 20px;
+  width: 70vw;
+  height: 3vh;
+  font-size: medium;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.contact .content form input[type="submit"] {
+  margin-top: 2vh;
+
+  width: 15vw;
+  height: 5vh;
+
+  font-size: medium;
+  border: none;
+  border-radius: 6px;
+
+  background-color: #1976d2;
+  color: white;
+  
+  transition: 0.3s ease-in;
+
+  cursor: pointer;
+
+  align-self: center;
+}
+
+.contact .content form input[type="submit"]:hover {
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.contact .content form textarea {
+  padding: 8px 20px;
+  width: 70vw;
+  height: 10vh;
+  
+  font-size: 17px;
+
+  border: none;
+  border-radius: 6px;
+  outline: none;
+
+  font-family: "Lato";
+  font-weight: 500;
+  
+  resize:vertical;
+}
+
+@media (max-width: 640px) {
+  .contact .content form input[type="submit"] {
+    width: auto;
+  }
 }

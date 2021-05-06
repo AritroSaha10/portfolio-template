@@ -10,9 +10,13 @@ function Home() {
                 <h1>Hi, I'm Aritro Saha. </h1>
                 <p>
                     I'm a high school student and a self-taught
-                    software developer in Toronto, Ontario. I've been
-                    programming for 5 years, and always enjoy taking up any
-                    type of project, from embedded development to website design.
+                    software developer in Toronto, Ontario. 
+                </p>
+
+                <p>
+                    I've been programming for 5 years, and always 
+                    enjoy taking up any type of project, from embedded 
+                    development to website design.
                 </p>
 
                 <p>I'm experienced in:</p>
@@ -25,6 +29,10 @@ function Home() {
                 </ul>
 
                 <p>I don't do freelance right now, but am planning to do so in the future.</p>
+
+                <br />
+                
+                <a className="call-to-action" href="#contact">Get in Touch <span className="arrow">➜</span></a>
             </div>
 
             <div className="picture">
