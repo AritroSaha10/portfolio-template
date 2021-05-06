@@ -5,7 +5,7 @@ import "../styles/about.css";
 
 function Home() {
     return (
-        <section className="home">
+        <section className="home" id="about">
             <div className="content">
                 <h1>Hi, I'm Aritro Saha. </h1>
                 <p>

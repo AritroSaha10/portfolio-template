@@ -115,7 +115,7 @@ const cards = [
 
 function About() {
     return (
-        <section className="works">
+        <section className="works" id="works">
             <div className="title">
                 <h2>Works</h2>
             </div>
