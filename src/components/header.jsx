@@ -3,30 +3,30 @@ import React from 'react';
 import "../styles/header.css";
 
 const links = [
-    /* TODO: Integrate this
     {
         name: "About",
-        link: "#"
+        link: "#about"
     },
     {
         name: "Works",
-        link: "#"
+        link: "#works"
     },
+    /*
     {
         name: "Blog",
         link: "#"
     },
+    */
     {
         name: "Contact",
-        link: "#"
+        link: "#contact"
     }
-    */
 ];
 
 function Header() {
     return (
         <header>
-            <div className="logo">A.S</div>
+            <div className="logo">&#60;A.S/&#62;</div>
             <nav className="items">
                 {links.map(({ name, link }) => (
                     <p>
