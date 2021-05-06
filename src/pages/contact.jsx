@@ -30,12 +30,12 @@ function Contact() {
         emailPromise.then(() => {
             // Let user know
             window.alert("The message has been submitted!");
-            // setWaitingForEmail(false)
+            setWaitingForEmail(false)
         }, (error) => {
             // Let user know
             window.alert("Sorry, your message couldn't be sent. Please try again.");
             console.error(error);
-            // setWaitingForEmail(false);
+            setWaitingForEmail(false);
         });
     };
 
