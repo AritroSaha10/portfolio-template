@@ -4,13 +4,13 @@
     justify-content: flex-start;
     align-items: center;
     height: auto;
-    padding: 1vh 4vw 4vh 4vw;
+    padding: 2vh 4vw 5vh 4vw;
     background-color: var(--bg-accent-color);
 }
 
 .works .cards {
     display: grid;
-    gap: 2rem;
+    gap: 5rem;
     justify-content: center;
     align-content: flex-start;
     grid-template-columns: 1fr 1fr 1fr;

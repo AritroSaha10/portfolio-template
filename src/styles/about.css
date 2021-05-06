@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0vh 4vw 4vh 4vw;
+    padding: 0vh 4vw 6vh 4vw;
 }
 
 .home .content {
@@ -35,7 +35,6 @@
 }
 
 .home .call-to-action:hover {
-    transform:translateX(10rem);
     box-shadow: 0 2px 4px var(--shadow-color);
 }
 

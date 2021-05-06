@@ -26,10 +26,10 @@ const links = [
 function Header() {
     return (
         <header>
-            <div className="logo">&#60;A.S/&#62;</div>
+            <div className="logo">A.S</div>
             <nav className="items">
                 {links.map(({ name, link }) => (
-                    <p>
+                    <p key={name}>
                         <a href={link}>
                             {name}
                         </a>

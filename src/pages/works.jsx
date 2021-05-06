@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import ReactDOM from "react-dom";
 
+// Icons
 import { InlineIcon } from '@iconify/react';
 import githubIcon from '@iconify-icons/mdi/github';
 import baselineWeb from '@iconify-icons/ic/baseline-web';
 import bxlPlayStore from '@iconify-icons/bx/bxl-play-store';
 
+// CSS
+import "../styles/animations.css";
 import "../styles/works.css";
 
 const cards = [
@@ -112,6 +116,32 @@ const cards = [
     },
 ]
 
+// Component that fades the card in when it becomes visisble
+function FadeCardOnScroll(props) {
+    const [cardVisisble, setCardVisisble] = useState(false);
+    const domRef = React.useRef();
+
+    // Create interaction observer
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                console.log(domRef.current.classList.contains("is-visible"));
+                // Make sure the class is not taken off, to make sure it only fades in
+                if (!domRef.current.classList.contains("is-visible")) {
+                    setCardVisisble(entry.isIntersecting);
+                }
+            });
+        });
+
+        observer.observe(domRef.current);
+    }, []);
+
+    return (
+        <div className={`card-anim ${cardVisisble ? "is-visible" : ""}`} ref={domRef}>
+            {props.children}
+        </div>
+    );
+}
 
 function About() {
     return (
@@ -122,25 +152,27 @@ function About() {
 
             <div className="cards">
                 {cards.map(({ name, description, projectRedirects, image, year }) => (
-                    <div className="card">
-                        {image && <img className="thumbnail" src={image} alt="Project preview" />}
-                        <div className="content">
-                            <h3>{name}</h3>
+                    <FadeCardOnScroll key={name}>
+                        <div className="card">
+                            {image && <img className="thumbnail" src={image} alt="Project preview" />}
+                            <div className="content">
+                                <h3>{name}</h3>
 
-                            {year && <p className="year">{year}</p>}
+                                {year && <p className="year">{year}</p>}
 
-                            <p>{description}</p>
+                                <p>{description}</p>
+                            </div>
+
+                            <div className="redirects">
+                                {projectRedirects.map(({ siteName, url, icon, color }) => (
+                                    <a className="projectLink" href={url} key={name + siteName} style={{ backgroundColor: color }}>
+                                        {icon}
+                                        {siteName}
+                                    </a>
+                                ))}
+                            </div>
                         </div>
-
-                        <div className="redirects">
-                            {projectRedirects.map(({ siteName, url, icon, color }) => (
-                                <a className="projectLink" href={url} style={{ backgroundColor: color }}>
-                                    {icon}
-                                    {siteName}
-                                </a>
-                            ))}
-                        </div>
-                    </div>
+                    </FadeCardOnScroll>
                 ))}
             </div>
         </section>
