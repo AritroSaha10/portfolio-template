@@ -37,7 +37,7 @@ function Footer() {
         <footer>
             <nav className="items">
                 {links.map(({ name, image, link }) => (
-                    <p>
+                    <p key={name}>
                         <a href={link} title={name}>
                             {image &&
                                 <InlineIcon icon={image} style={{ "fontSize": "20px" }} />

@@ -25,7 +25,7 @@ const cards = [
                 siteName: "Website",
                 url: "https://my-puja-production.web.app",
                 icon: <InlineIcon className="icon" icon={baselineWeb} />,
-                color: "#00796b"
+                color: "#673ab7"
             },
         ],
         image: null,
@@ -79,7 +79,7 @@ const cards = [
                 siteName: "Website",
                 url: "https://to-do-list-development.web.app/",
                 icon: <InlineIcon className="icon" icon={baselineWeb} />,
-                color: "#00796b"
+                color: "#673ab7"
             },
         ],
         image: null,
@@ -124,7 +124,6 @@ function FadeCardOnScroll(props) {
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                console.log(domRef.current.classList.contains("is-visible"));
                 // Make sure the class is not taken off, to make sure it only fades in
                 if (!domRef.current.classList.contains("is-visible")) {
                     setCardVisisble(entry.isIntersecting);

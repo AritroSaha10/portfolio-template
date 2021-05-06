@@ -10,7 +10,7 @@
 
 .works .cards {
     display: grid;
-    gap: 5rem;
+    gap: 5rem 2rem;
     justify-content: center;
     align-content: flex-start;
     grid-template-columns: 1fr 1fr 1fr;

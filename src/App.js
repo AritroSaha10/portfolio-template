@@ -15,21 +15,15 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header />
+      <Header />
+      
+      <div className="mainContent">
+        <Home />
+        <Works />
+        <Contact />
+      </div>
 
-        <div className="mainContent">
-          <Switch>
-            <Route path="/">
-              <Home />
-              <Works />
-              <Contact />
-            </Route>
-          </Switch>
-        </div>
-
-        <Footer />
-      </BrowserRouter>
+      <Footer />
     </div>
   );
 }
