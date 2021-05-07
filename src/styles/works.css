@@ -1,16 +1,22 @@
+h1 {
+    font-size: xx-large;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
 .works {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     height: auto;
-    padding: 2vh 4vw 5vh 4vw;
+    padding: 3vh 4vw 5vh 4vw;
     background-color: var(--bg-accent-color);
 }
 
 .works .cards {
     display: grid;
-    gap: 5rem 2rem;
+    gap: 2.5rem;
     justify-content: center;
     align-content: flex-start;
     grid-template-columns: 1fr 1fr 1fr;
@@ -31,17 +37,8 @@
     padding-bottom: 0.5rem;
 }
 
-@media (max-width: 740px) {
-    .works .cards {
-        grid-template-columns: 1fr;
-    }
-    .works .cards .card .thumbnail {
-        display: none;
-    }
-}
-
 .works .cards .card .thumbnail {
-    max-width: 200px;
+    max-width: 70%;
     align-self: center;
 }
 
@@ -72,4 +69,13 @@
 
 .works .cards .card .projectLink .icon {
     padding-right: 0.25rem;
+}
+
+@media (max-width: 740px) {
+    .works .cards {
+        grid-template-columns: 1fr;
+    }
+    .works .cards .card .thumbnail {
+        max-width: 200px;
+    }
 }

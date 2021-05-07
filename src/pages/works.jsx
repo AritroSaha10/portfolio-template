@@ -10,6 +10,12 @@ import bxlPlayStore from '@iconify-icons/bx/bxl-play-store';
 import "../styles/animations.css";
 import "../styles/works.css";
 
+// Images
+import myPujaThumbnail from "../images/projectThumbnails/MacbookAir_Upscaled_MyPuja.png";
+import weRecyclePhone from "../images/projectThumbnails/WeRecycle_Phone_Preview.png";
+import tcsThumbnail from "../images/projectThumbnails/TenantComplaintSystem_Preview.png";
+// import datalabellingIntellihelm from "../images/projectThumbnails/DataLabelling_IntelliHelm_Preview_2.png";
+
 const cards = [
     {
         name: "My Puja",
@@ -28,7 +34,7 @@ const cards = [
                 color: "#673ab7"
             },
         ],
-        image: null,
+        image: myPujaThumbnail,
         year: "2020/2021"
     },
     {
@@ -42,7 +48,7 @@ const cards = [
                 color: "#1976d2"
             }
         ],
-        image: null,
+        image: tcsThumbnail,
         year: "2020"
     },
     {
@@ -62,7 +68,7 @@ const cards = [
                 color: "#00796b"
             }
         ],
-        image: null,
+        image: weRecyclePhone,
         year: "2019/2020"
     },
     {
@@ -145,7 +151,7 @@ function About() {
     return (
         <section className="works" id="works">
             <div className="title">
-                <h2>Works</h2>
+                <h1>Works</h1>
             </div>
 
             <div className="cards">
