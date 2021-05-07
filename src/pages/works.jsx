@@ -169,7 +169,7 @@ function About() {
 
                             <div className="redirects">
                                 {projectRedirects.map(({ siteName, url, icon, color }) => (
-                                    <a className="projectLink" href={url} key={name + siteName} style={{ backgroundColor: color }}>
+                                    <a className="projectLink" target="_blank" rel="noreferrer" href={url} key={name + siteName} style={{ backgroundColor: color }}>
                                         {icon}
                                         {siteName}
                                     </a>
