@@ -10,7 +10,7 @@ h1 {
     justify-content: flex-start;
     align-items: center;
     height: auto;
-    padding: 3vh 4vw 5vh 4vw;
+    padding: 3vh 4vw 3vh 4vw;
     background-color: var(--bg-color);
 }
 

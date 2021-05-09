@@ -17,7 +17,7 @@ textarea::-webkit-scrollbar-thumb {
   justify-content: flex-start;
   align-items: center;
   height: auto;
-  padding: 1vh 4vw 4vh 4vw;
+  padding: 0vh 4vw 6vh 4vw;
   background-color: var(--bg-color);
 }
 
