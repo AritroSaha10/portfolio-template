@@ -2,6 +2,14 @@
   --bg-color: rgba(232, 235, 240);
   --shadow-color: rgba(57, 63, 72, 0.3);
   --bg-accent-color: rgb(212, 215, 219);
+  --bg-red: #ffcdd2;
+  --bg-indigo: #c5cae9;
+  --bg-blue: #bbdefb;
+  --bg-light-blue: #b3e5fc;
+  --bg-cyan: #b2ebf2;
+  --bg-teal: #b2dfdb;
+  --bg-green: #c8e6c9;
+  --bg-light-green: #dcedc8;
 }
 
 html {

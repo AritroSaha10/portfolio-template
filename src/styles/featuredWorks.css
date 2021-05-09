@@ -1,0 +1,106 @@
+.featuredWorks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    background-color: var(--bg-accent-color);
+}
+
+.featuredWorks .projectSlides .slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.featuredWorks .projectSlides .slide > div {
+    padding: 8vh 2vw;
+}
+
+.featuredWorks .projectSlides .slide.left {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.featuredWorks .projectSlides .slide .preview {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8vh 0vw 8vh 8vw;
+}
+
+.featuredWorks .projectSlides .slide.left .preview {
+    justify-content: flex-end;
+    padding: 8vh 8vw 8vh 0vw;
+}
+
+.featuredWorks .projectSlides .slide .preview > img {
+    max-width: 35vw;
+}
+
+.featuredWorks .projectSlides .slide .content {
+    justify-self: right;
+    align-self: flex-start;
+    padding: 8vh 8vw 8vh 2vw;
+}
+
+.featuredWorks .projectSlides .slide.left .content {
+    padding: 8vh 2vw 8vh 8vw;
+}
+
+.featuredWorks .projectSlides .slide .content .redirects {
+    display: flex;
+    flex-direction: row;
+}
+
+.featuredWorks .projectSlides .slide .content .projectLink {
+    text-decoration: none;
+    color: white;
+    background-color: #1976d2;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+.featuredWorks .projectSlides .slide .content .projectLink:hover {
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.featuredWorks .projectSlides .slide .content .projectLink .icon {
+    padding-right: 0.25rem;
+}
+
+@media (max-width: 740px) {
+    .featuredWorks .projectSlides .slide {
+        flex-direction: column-reverse;
+    }
+
+    .featuredWorks .projectSlides .slide.left {
+        flex-direction: column-reverse;
+    }
+
+    .featuredWorks .projectSlides .slide .preview {
+        padding: 2vh 0vw 4vh 0vw;
+    }
+
+    .featuredWorks .projectSlides .slide.left .preview {
+        justify-content: flex-end;
+        padding: 2vh 0vw 4vh 0vw;
+    }
+    
+    .featuredWorks .projectSlides .slide .preview > img {
+        max-width: 75vw;
+    }
+
+    .featuredWorks .projectSlides .slide .content {
+        padding: 8vh 8vw 2vh 8vw;
+    }
+    
+    .featuredWorks .projectSlides .slide.left .content {
+        justify-self: center;
+        padding: 8vh 8vw 2vh 8vw;
+    }
+}

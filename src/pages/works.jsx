@@ -11,9 +11,9 @@ import "../styles/animations.css";
 import "../styles/works.css";
 
 // Images
-import myPujaThumbnail from "../images/projectThumbnails/MacbookAir_Upscaled_MyPuja.png";
+import myPujaThumbnail from "../images/projectThumbnails/MyPuja_Laptop.png";
 import weRecyclePhone from "../images/projectThumbnails/WeRecycle_Phone_Preview.png";
-import tcsThumbnail from "../images/projectThumbnails/TenantComplaintSystem_Preview.png";
+import tcsThumbnail from "../images/projectThumbnails/TenantComplaintSystem_Desktop.png";
 // import datalabellingIntellihelm from "../images/projectThumbnails/DataLabelling_IntelliHelm_Preview_2.png";
 
 const cards = [

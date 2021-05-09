@@ -2,6 +2,7 @@ import './App.css';
 
 // Pages
 import Home from "./pages/about";
+import FeaturedWorks from "./pages/featuredWorks";
 import Works from "./pages/works";
 import Contact from "./pages/contact";
 
@@ -16,6 +17,7 @@ function App() {
 
       <div className="mainContent">
         <Home />
+        <FeaturedWorks />
         <Works />
         <Contact />
       </div>
