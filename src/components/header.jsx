@@ -8,8 +8,8 @@ const links = [
         link: "#about"
     },
     {
-        name: "Works",
-        link: "#works"
+        name: "Projects",
+        link: "#projects"
     },
     /*
     {

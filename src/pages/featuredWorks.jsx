@@ -89,7 +89,7 @@ const bgColors = [
 
 function FeaturedWorks() {
     return (
-        <section className="featuredWorks" id="featuredWorks">
+        <section className="featuredWorks">
             <div className="projectSlides">
                 {projects.map(({ name, linkName, description, projectRedirects, image, year, tagline }, i) => (
                     // Alternate slide direction based on order
@@ -113,7 +113,7 @@ function FeaturedWorks() {
                             </div>
 
                             {/*
-                            
+
                             <div className="projectViewContainer">
                                 <a className="viewProject projectLink" href={`/projects/${linkName}`}>View Project ➜</a>
                             </div>

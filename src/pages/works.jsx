@@ -143,9 +143,9 @@ function FadeCardOnScroll(props) {
 
 function About() {
     return (
-        <section className="works" id="works">
+        <section className="works">
             <div className="title">
-                <h1>Works</h1>
+                <h1>Other Projects</h1>
             </div>
 
             <div className="cards">

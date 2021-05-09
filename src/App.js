@@ -17,8 +17,12 @@ function App() {
 
       <div className="mainContent">
         <Home />
-        <FeaturedWorks />
-        <Works />
+        
+        <section id="projects">
+          <FeaturedWorks />
+          <Works />
+        </section>
+
         <Contact />
       </div>
 
