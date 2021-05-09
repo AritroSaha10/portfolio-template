@@ -16,23 +16,15 @@ function Home() {
                     </h2>
                 </div>
 
-                <p className="animate fadeInLeft two">
-                    I've been programming for 5 years, and always
-                    enjoy taking up any type of project, from embedded
-                    development to website design.
+                <p className="animate fadeInLeft two" style={{fontSize: "15px"}}>
+                    I've been a passionate programmer for over 5 years 
+                    and want to use technology to make daily life easier, 
+                    whether that's by making intuitively designed websites
+                    or creating embedded smart devices that become a daily
+                    part of life.   
                 </p>
 
-                <p className="animate fadeInLeft two">I'm experienced in:</p>
-                <ul className="animate fadeInLeft two">
-                    <li>React</li>
-                    <li>HTML / CSS / JS</li>
-                    <li>Python</li>
-                    <li>C++</li>
-                    <li>Native Android Development</li>
-                    <li>and more...</li>
-                </ul>
-
-                <p className="animate fadeInLeft three">I don't do freelance right now, but am planning to do so in the future.</p>
+                <p className="animate fadeInLeft two">I don't do freelance right now, but am planning to do so in the future.</p>
 
                 <br />
 
