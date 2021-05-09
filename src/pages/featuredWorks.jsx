@@ -94,11 +94,11 @@ function FeaturedWorks() {
                 {projects.map(({ name, linkName, description, projectRedirects, image, year, tagline }, i) => (
                     // Alternate slide direction based on order
                     <div className={`slide ${i % 2 ? "left" : "right"}`} key={i} style={{ backgroundColor: bgColors[i % bgColors.length] }}>
-                        <div className="preview">
+                        <div className={`preview animate fadeIn${i % 2 ? "Right" : "Left"}`}>
                             <img src={image} alt={`${name} Preview`} />
                         </div>
 
-                        <div className="content">
+                        <div className={`content animate fadeIn${i % 2 ? "Left" : "Right"}`}>
                             <h1>{name}</h1>
                             <h2>{tagline}</h2>
                             <p>{description}</p>
