@@ -19,7 +19,7 @@ const projects = [
     {
         name: "My Puja",
         linkName: "MyPuja",
-        description: "A full stack web app using React and Firebase with an organized directory of events / pujas and livestreams directed toward Hindu temple-goers, specifically patrons of the Toronto Kalibari temple.",
+        description: "A full stack web app using React and Firebase with an organized directory of events / pujas and livestreams directed toward Hindu temple-goers, specifically patrons of the Toronto Kalibari temple. The intention of the web app is to assist with the transitioning to online services due to the COVID-19 pandemic.",
         projectRedirects: [
             {
                 siteName: "GitHub",
@@ -36,7 +36,7 @@ const projects = [
         ],
         image: myPujaThumbnail,
         year: "2020/2021",
-        tagline: "Easy Temple Access"
+        tagline: "Quick Access to Temples Online"
     },
     {
         name: "Tenant Complaint System",
@@ -52,7 +52,7 @@ const projects = [
         ],
         image: tcsThumbnail,
         year: "2020",
-        tagline: "File and Manage Complaints Easily"
+        tagline: "Stress-Free Complaint Filing and Management"
     },
     {
         name: "WeRecycle",
@@ -74,7 +74,7 @@ const projects = [
         ],
         image: weRecyclePhone,
         year: "2019/2020",
-        tagline: "Easily Sort Your Waste"
+        tagline: "Recycling Made Simple"
     }
 ]
 
@@ -82,7 +82,7 @@ const bgColors = [
     "var(--bg-blue)",
     // "var(--bg-light-blue)",
     "var(--bg-cyan)",
-    // "var(--bg-teal)",
+    "var(--bg-teal)",
     "var(--bg-green)",
     // "var(--bg-light-green)"
 ]
