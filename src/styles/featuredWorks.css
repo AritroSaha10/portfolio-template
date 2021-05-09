@@ -7,6 +7,10 @@
     background-color: var(--bg-accent-color);
 }
 
+.featuredWorks .projectSlides {
+    width: 100%;
+}
+
 .featuredWorks .projectSlides .slide {
     display: flex;
     flex-direction: row;
@@ -71,6 +75,17 @@
 
 .featuredWorks .projectSlides .slide .content .projectLink .icon {
     padding-right: 0.25rem;
+}
+
+.featuredWorks .projectSlides .slide .content .projectViewContainer {
+    margin: 2rem 0rem;
+}
+
+.featuredWorks .projectSlides .slide .content .projectViewContainer .viewProject {
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    background-color: #304ffe;
+    font-size: medium;
 }
 
 @media (max-width: 740px) {

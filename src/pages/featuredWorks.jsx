@@ -18,6 +18,7 @@ import bxlPlayStore from '@iconify-icons/bx/bxl-play-store';
 const projects = [
     {
         name: "My Puja",
+        linkName: "MyPuja",
         description: "A full stack web app using React and Firebase with an organized directory of events / pujas and livestreams directed toward Hindu temple-goers, specifically patrons of the Toronto Kalibari temple.",
         projectRedirects: [
             {
@@ -39,6 +40,7 @@ const projects = [
     },
     {
         name: "Tenant Complaint System",
+        linkName: "TenantComplaintSystem",
         description: "A set of full-stack websites using JQuery, Bootstrap 4, and Firebase that allows for the filing and management of complaints from tenants in a modern fashion.",
         projectRedirects: [
             {
@@ -54,6 +56,7 @@ const projects = [
     },
     {
         name: "WeRecycle",
+        linkName: "WeRecycle",
         description: "An Android app utilizing AndroidX APIs and Firebase that helps you learn to sort your waste with an index of items, a finetuned search tool, and an Machine Learning camera scanner that recognizes the respective bin of an item in an instant.",
         projectRedirects: [
             {
@@ -88,7 +91,7 @@ function FeaturedWorks() {
     return (
         <section className="featuredWorks" id="featuredWorks">
             <div className="projectSlides">
-                {projects.map(({ name, description, projectRedirects, image, year, tagline }, i) => (
+                {projects.map(({ name, linkName, description, projectRedirects, image, year, tagline }, i) => (
                     // Alternate slide direction based on order
                     <div className={`slide ${i % 2 ? "left" : "right"}`} key={i} style={{ backgroundColor: bgColors[i % bgColors.length] }}>
                         <div className="preview">
@@ -99,7 +102,7 @@ function FeaturedWorks() {
                             <h1>{name}</h1>
                             <h2>{tagline}</h2>
                             <p>{description}</p>
-                            
+
                             <div className="redirects">
                                 {projectRedirects.map(({ siteName, url, icon, color }) => (
                                     <a className="projectLink" target="_blank" rel="noreferrer" href={url} key={name + siteName} style={{ backgroundColor: color }}>
@@ -108,6 +111,14 @@ function FeaturedWorks() {
                                     </a>
                                 ))}
                             </div>
+
+                            {/*
+                            
+                            <div className="projectViewContainer">
+                                <a className="viewProject projectLink" href={`/projects/${linkName}`}>View Project ➜</a>
+                            </div>
+                            
+                            */}
                         </div>
                     </div>
                 ))}
