@@ -1,104 +1,89 @@
 import React from 'react'
 
 // CSS
-import "../styles/animations.css";
 import "../styles/featuredWorks.css";
 
 // Images
-import myPujaThumbnail from "../images/projectThumbnails/MyPuja_Laptop.png";
-import weRecyclePhone from "../images/projectThumbnails/WeRecycle_Phone_Preview_Cropped.png";
-import tcsThumbnail from "../images/projectThumbnails/TenantComplaintSystem_Desktop.png";
+import coolWebsite1 from "../images/projectThumbnails/cool-website.png";
+import coolWebsite2 from "../images/projectThumbnails/cool-website-2.png";
+import coolestWebsite from "../images/projectThumbnails/coolest-website.png";
 
 // Icons
 import { InlineIcon } from '@iconify/react';
 import githubIcon from '@iconify-icons/mdi/github';
 import baselineWeb from '@iconify-icons/ic/baseline-web';
-import bxlPlayStore from '@iconify-icons/bx/bxl-play-store';
 
 const projects = [
     {
-        name: "My Puja",
-        linkName: "MyPuja",
-        description: "A full stack web app using React and Firebase with an organized directory of events / pujas and livestreams directed toward Hindu temple-goers, specifically patrons of the Toronto Kalibari temple. The intention of the web app is to assist with the transitioning to online services due to the COVID-19 pandemic.",
+        name: "Project 1",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices nunc nec neque tristique, at finibus velit viverra. Ut malesuada metus vitae leo porttitor pellentesque. Phasellus in massa vel urna bibendum lobortis et nec nisi. Aenean vulputate mattis quam quis egestas. Vivamus ornare facilisis velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue erat quis eros posuere, quis sodales sem congue.",
         projectRedirects: [
             {
                 siteName: "GitHub",
-                url: "https://github.com/AritroSaha10/MyPuja-Website",
+                url: "https://github.com/github/docs",
                 icon: <InlineIcon className="icon" icon={githubIcon} />,
                 color: "#1976d2"
             },
             {
                 siteName: "Website",
-                url: "https://my-puja-production.web.app",
+                url: "https://github.com",
                 icon: <InlineIcon className="icon" icon={baselineWeb} />,
                 color: "#673ab7"
             },
         ],
-        image: myPujaThumbnail,
+        image: coolWebsite1,
         year: "2020/2021",
-        tagline: "Quick Access to Temples Online"
+        tagline: "Cool Project"
     },
     {
-        name: "Tenant Complaint System",
-        linkName: "TenantComplaintSystem",
-        description: "A set of full-stack websites using JQuery, Bootstrap 4, and Firebase that allows for the filing and management of complaints from tenants in a modern fashion.",
+        name: "Project 2",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices nunc nec neque tristique, at finibus velit viverra. Ut malesuada metus vitae leo porttitor pellentesque. Phasellus in massa vel urna bibendum lobortis et nec nisi. Aenean vulputate mattis quam quis egestas. Vivamus ornare facilisis velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue erat quis eros posuere, quis sodales sem congue.",
         projectRedirects: [
             {
                 siteName: "GitHub",
-                url: "https://github.com/AritroSaha10/Tenant-Complaint-System",
+                url: "https://github.com/",
                 icon: <InlineIcon className="icon" icon={githubIcon} />,
                 color: "#1976d2"
             }
         ],
-        image: tcsThumbnail,
+        image: coolWebsite2,
         year: "2020",
-        tagline: "Stress-Free Complaint Filing and Management"
+        tagline: "Cooler Project"
     },
     {
-        name: "WeRecycle",
-        linkName: "WeRecycle",
-        description: "An Android app utilizing AndroidX APIs and Firebase that helps you learn to sort your waste with an index of items, a finetuned search tool, and an Machine Learning camera scanner that recognizes the respective bin of an item in an instant.",
+        name: "Project 3",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices nunc nec neque tristique, at finibus velit viverra. Ut malesuada metus vitae leo porttitor pellentesque. Phasellus in massa vel urna bibendum lobortis et nec nisi. Aenean vulputate mattis quam quis egestas. Vivamus ornare facilisis velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue erat quis eros posuere, quis sodales sem congue.",
         projectRedirects: [
             {
                 siteName: "GitHub",
-                url: "https://github.com/AritroSaha10/WeRecycle",
+                url: "https://github.com/",
                 icon: <InlineIcon className="icon" icon={githubIcon} />,
                 color: "#1976d2"
             },
-            {
-                siteName: "Google Play",
-                url: "https://play.google.com/store/apps/details?id=com.aritrosaha.aritr.werecycleapp",
-                icon: <InlineIcon className="icon" icon={bxlPlayStore} />,
-                color: "#00796b"
-            }
         ],
-        image: weRecyclePhone,
+        image: coolestWebsite,
         year: "2019/2020",
-        tagline: "Recycling Made Simple"
+        tagline: "Coolest Project"
     }
 ]
 
 const bgColors = [
-    "var(--bg-blue)",
-    // "var(--bg-light-blue)",
-    "var(--bg-cyan)",
-    "var(--bg-teal)",
-    "var(--bg-green)",
-    // "var(--bg-light-green)"
+    "var(--bg-accent-color)",
+    "var(--bg-color)",
 ]
 
 function FeaturedWorks() {
     return (
         <section className="featuredWorks">
             <div className="projectSlides">
-                {projects.map(({ name, linkName, description, projectRedirects, image, year, tagline }, i) => (
+                {projects.map(({ name, description, projectRedirects, image, tagline }, i) => (
                     // Alternate slide direction based on order
                     <div className={`slide ${i % 2 ? "left" : "right"}`} key={i} style={{ backgroundColor: bgColors[i % bgColors.length] }}>
-                        <div className={`preview animate fadeIn${i % 2 ? "Right" : "Left"}`}>
+                        <div className="preview">
                             <img src={image} alt={`${name} Preview`} />
                         </div>
 
-                        <div className={`content animate fadeIn${i % 2 ? "Left" : "Right"}`}>
+                        <div className="content">
                             <h1>{name}</h1>
                             <h2>{tagline}</h2>
                             <p>{description}</p>
@@ -111,14 +96,6 @@ function FeaturedWorks() {
                                     </a>
                                 ))}
                             </div>
-
-                            {/*
-
-                            <div className="projectViewContainer">
-                                <a className="viewProject projectLink" href={`/projects/${linkName}`}>View Project ➜</a>
-                            </div>
-                            
-                            */}
                         </div>
                     </div>
                 ))}

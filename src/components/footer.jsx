@@ -13,22 +13,22 @@ const links = [
     {
         name: "Instagram",
         image: instagramIcon,
-        link: "https://www.instagram.com/saha.aritro/"
+        link: "https://www.instagram.com/instagram/" // TODO: Replace with your own Instagram profile, or remove this link
     },
     {
         name: "GitHub",
         image: githubIcon,
-        link: "https://github.com/AritroSaha10"
+        link: "https://github.com/github"// TODO: Replace with your own GitHub profile, or remove this link
     },
     {
         name: "StackOverflow",
         image: stackoverflowIcon,
-        link: "https://stackoverflow.com/users/7363404/axiumin?tab=profile"
+        link: "https://stackoverflow.com/users/..." // TODO: Replace with your own StackOverflow profile, or remove this link
     },
     {
         name: "Email",
         image: emailIcon,
-        link: "mailto:aritro.saha729@gmail.com"
+        link: "mailto:example@mail.com" // TODO: Replace with your own email, or remove this link
     }
 ];
 

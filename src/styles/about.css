@@ -3,8 +3,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0vh 4vw 6vh 4vw;
-    background-color: var(--bg-deep-purple);
+    padding: 2vh 4vw 6vh 4vw;
+    background-color: var(--bg-color);
 }
 
 .home .content {

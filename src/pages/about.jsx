@@ -1,7 +1,6 @@
 import React from 'react';
-import profilePicture from "../images/pfp.png";
+import profilePicture from "../images/person.jfif";
 
-import "../styles/animations.css";
 import "../styles/about.css";
 
 function Home() {
@@ -9,29 +8,22 @@ function Home() {
         <section className="home" id="about">
             <div className="content">
                 <div className="title">
-                    <h1 className="animate fadeInLeft one">Hi, I'm Aritro Saha. </h1>
-                    <h2 className="animate fadeInLeft two">
-                        I'm a high school student and a self-taught
-                        software developer in Toronto, Ontario.
+                    <h1>Hi, I'm John Smith. </h1>
+                    <h2>
+                        I'm a student at John Fraser Secondary School, and love programming.
                     </h2>
                 </div>
 
-                <p className="animate fadeInLeft two" style={{fontSize: "15px"}}>
-                    I've been a passionate programmer for over 5 years 
-                    and want to use technology to make daily life easier, 
-                    whether that's by making intuitively designed websites
-                    or creating embedded smart devices that become a daily
-                    part of life.   
+                <p style={{fontSize: "15px"}}>
+                    I'm a beginner in web development, and I'm currently learning React.js.
                 </p>
-
-                <p className="animate fadeInLeft two">I don't do freelance right now, but am planning to do so in the future.</p>
 
                 <br />
 
-                <a className="call-to-action animate fadeInLeft three" href="#contact">Get in Touch <span className="arrow">➜</span></a>
+                <a className="call-to-action" href="#contact">Get in Touch <span className="arrow">➜</span></a>
             </div>
 
-            <div className="picture animate fadeInRight one">
+            <div className="picture">
                 <img src={profilePicture} alt="Portrait" title="Portrait" />
             </div>
         </section>
