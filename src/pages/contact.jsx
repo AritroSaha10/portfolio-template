@@ -10,8 +10,6 @@ function Contact() {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-
-        console.log("bruhuh");
         
         window.location.href = `mailto:example@email.com?subject=Message%20from%20${name}&cc=${email}&body=${message}`;
     };
